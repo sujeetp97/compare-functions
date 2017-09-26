@@ -25,7 +25,7 @@ Runs the functions using random sampling of provided parameter for given sample 
 \examples{
 sample_function_1 <- function(arg){<Do Something>}
 sample_function_2 <- function(arg){<Do Something else>}
-param <- <A vector/list/data.table object to be passed as arg to the sample_functions> 
+param <- <A vector/list/data.table object to be passed as arg to the sample_functions>
 size <- Size of Sample
 compare_functions(functions = c(sample_function_1, sample_function_2), param = param, size = size)
 }

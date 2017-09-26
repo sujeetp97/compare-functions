@@ -25,7 +25,7 @@ Runs the functions using random sampling of the provided parameter for different
 \examples{
 sample_function_1 <- function(arg){<Do Something>}
 sample_function_2 <- function(arg){<Do Something else>}
-param <- <A vector/list/data.table object to be passed as arg to the sample_functions> 
+param <- <A vector/list/data.table object to be passed as arg to the sample_functions>
 increments <- Number of times to run the functions with incrementally larger sample sizes of param. Eg. If size of param is 10, and increment is 3, then both functions will be run with 3 samples of param with sizes 1, 5 and 10 (evenly spaced out sample sizes)
 compare_functions(functions = c(sample_function_1, sample_function_2), param = param, increments = increments)
 }
