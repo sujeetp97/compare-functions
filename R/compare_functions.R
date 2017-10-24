@@ -22,6 +22,7 @@ compare_functions <- function(functions, param, increments){
     core_compare_functions(functions, param, X)
   }))
   exec_times_dt[, c("user_rate", "sys_rate", "elapsed_rate") := .(user_time/size, sys_time/size, elapsed_time/size)]
+  class(exec_times_dt) <- c("comp.funcs.res.dt", "data.table", "data.frame")
   return(exec_times_dt[order(function_index, size),])
 }
 
