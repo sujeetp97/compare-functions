@@ -10,11 +10,13 @@ lm.comp.funcs.res.dt(comp_funcs_res)
 \item{comp_funcs_res}{Object of class \code{comp.funcs.res.dt} - result of function \code{compare_functions()}}
 }
 \value{
-Returns a list where first level index corresponds to \code{function_index} and second level names \code{user_time, sys_time and elapsed_time}  have
-lm result objects of respective time attributes \code{user_time, sys_time and elapsed_time} with \code{size} for the corresponding \code{function_index}
+Returns a list where first level index corresponds to \code{function_index} 
+and second level names \code{user_time, sys_time and elapsed_time}  have lm result
+objects of respective time attributes \code{user_time, sys_time and elapsed_time} 
+with \code{size} for the corresponding \code{function_index}
 }
 \description{
-S3 method for \code{lm} for Linear regression over time attributes by size for every function
+Function for \code{lm} for Linear regression over time attributes by size for every function
 }
 \details{
 Runs Linear regression over time attributes \code{user_time, sys_time, elapsed_time} as Y and \code{size} as X.

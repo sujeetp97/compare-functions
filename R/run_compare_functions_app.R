@@ -6,7 +6,7 @@
 #' @export
 
 run_compare_functions_app <- function(){
-  app_dir <- system.file("shiny-apps", "Compare Functions", package = "compareFunctions")
+  app_dir <- system.file("shinyapps", "Compare_Functions", package = "compareFunctions")
   if(app_dir == ""){
     stop("Could not find app directory. Try re-installing 'compareFunctions'.", call. = FALSE)
   }

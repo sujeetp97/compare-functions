@@ -14,20 +14,25 @@ core_compare_functions(functions, param, size)
 \item{size}{An integer value. This is the sample size of \code{param} to run the \code{functions}}
 }
 \value{
-A data.table showing execution times and execution rates for the \code{functions} when run with sample of \code{param} for sample size \code{size}
+A data.table showing execution times and execution rates for the \code{functions} when run with sample of \code{param} 
+for sample size \code{size}
 }
 \description{
 Compare Two or more functions on execution times using a given sample size of the given parameter
 }
 \details{
-Runs the functions using random sampling of provided parameter for given sample size, and returns a data table with executions times and execution rates for the different functions
+Runs the functions using random sampling of provided parameter for given sample size, and returns a data table with 
+executions times and execution rates for the different functions
 }
 \examples{
-sample_function_1 <- function(arg){<Do Something>}
-sample_function_2 <- function(arg){<Do Something else>}
-param <- <A vector/list/data.table object to be passed as arg to the sample_functions>
-size <- Size of Sample
-compare_functions(functions = c(sample_function_1, sample_function_2), param = param, size = size)
+\dontrun{
+sample_function_1 <- function(arg){#Logic}
+sample_function_2 <- function(arg){#Logic}
+param # <A vector/list/data.table object to be passed as arg to the sample_functions>
+size # Size of Sample
+compare_functions(functions = c(sample_function_1, sample_function_2), param = param, 
+size = size)
+}
 }
 \author{
 Sujeet G Pillai

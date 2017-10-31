@@ -18,7 +18,8 @@ ggplot2 object with the plot
 Gives a plot object for specified Y axis
 }
 \details{
-S3 \code{plot} method for class \code{comp.funcs.res.dt}. Plots a line chart with function_index split by function_index with \code{size} in X axis
+S3 \code{plot} method for class \code{comp.funcs.res.dt}. Plots a line chart with function_index split by 
+function_index with \code{size} in X axis
 }
 \author{
 Sujeet G Pillai

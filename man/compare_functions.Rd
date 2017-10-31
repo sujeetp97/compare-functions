@@ -11,23 +11,33 @@ compare_functions(functions, param, increments)
 
 \item{param}{A single vector, list or data.table parameter for the \code{functions}.}
 
-\item{increments}{An integer value. This is the number of different sample sizes of \code{param} to run the \code{functions} with, each with an incrementally larger \code{size} of sample.}
+\item{increments}{An integer value. This is the number of different sample sizes of \code{param} to run the 
+\code{functions} with, each with an incrementally larger \code{size} of sample.}
 }
 \value{
-A data.table showing different execution times and execution rates for the \code{functions} when run with \code{param} for \code{increments} of run each with an incrementally larger \code{size} of sample.
+A data.table showing different execution times and execution rates for the \code{functions} when run 
+with \code{param} for \code{increments} of run each with an incrementally larger \code{size} of sample.
 }
 \description{
 Compare Two or more single parameter functions on execution times with multiple iterations
 }
 \details{
-Runs the functions using random sampling of the provided parameter for different sample sizes, and returns a data table with executions times and execution rates for the different functions for different sample sizes of the parameter
+Runs the functions using random sampling of the provided parameter for different sample sizes, 
+and returns a data table with executions times and execution rates for the different functions 
+for different sample sizes of the parameter
 }
 \examples{
-sample_function_1 <- function(arg){<Do Something>}
-sample_function_2 <- function(arg){<Do Something else>}
-param <- <A vector/list/data.table object to be passed as arg to the sample_functions>
-increments <- Number of times to run the functions with incrementally larger sample sizes of param. Eg. If size of param is 10, and increment is 3, then both functions will be run with 3 samples of param with sizes 1, 5 and 10 (evenly spaced out sample sizes)
-compare_functions(functions = c(sample_function_1, sample_function_2), param = param, increments = increments)
+\dontrun{
+sample_function_1 <- function(arg){#Logic}
+sample_function_2 <- function(arg){#Logic}
+param # <A vector/list/data.table object to be passed as arg to the sample_functions>
+increments # Number of times to run the functions with incrementally larger sample 
+sizes of param. Eg. If size of param is 10, and increment is 3, then both functions 
+will be run with 3 samples of param with sizes 1, 5 and 10 (evenly spaced out sample 
+sizes)
+compare_functions(functions = c(sample_function_1, sample_function_2), param = param, 
+increments = increments)
+}
 }
 \author{
 Sujeet G Pillai
